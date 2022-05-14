@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,147 @@
     <title>Pooch Care</title>
     <!-- reset css -->
     <link rel="stylesheet" href="./css/reset.css">
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.css">
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header class="text-danger bg-danger">
-        hhhhh
-    </header>
- 
+   
+
+    <main>
+
+        <!-- Our Plans -->
+        <section class="ourPlan">
+
+        </section>
+        <!-- NUTRITION -->
+        <section class="nutrition">
+
+        </section>
+        <!-- TESTIMONIALS -->
+        <section class="testimontal">
+
+        </section>
+        <!-- Updated -->
+        <section class="updated">
+
+        </section>
+        <!-- footer -->
+        <footer class="bg-dark">
+            <div class="footer__container ">
+                <div class="footer__top row">
+                    <div class="footer__item col-xl-4">
+                        <h2>Contact information</h2>
+                        <p>Address : #135 block, Barnard St. Brooklyn, London 10036, UK</p>
+                        <div class="footer-phone">
+                            <span>Phone :</span>
+                            <a href="#">+(12)234-11-24</a>
+                        </div> 
+                        <div class="footer-email">
+                            <span>Email : </span>
+                                <a href="#"> example@mail.com</a>
+                        </div>
+                    </div>
+                    <div class="footer__item col">
+                        <h2>Company</h2>
+                        <ul>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog Posts</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item col-ms-2">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Create account</a>
+                            </li>
+                            <li>
+                                <a href="#">Care Center</a>
+                            </li>
+                            <li>
+                                <a href="#">Site Feedack</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item col">
+                        <h2>Support</h2>
+                        <ul>
+                            <li>
+                                <a href="#">All Dogs</a>
+                            </li>
+                            <li>
+                                <a href="#">Care Advices</a>
+                            </li>
+                            <li>
+                                <a href="#">Care Support</a>
+                            </li>
+                            <li>
+                                <a href="#">Veterinary Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom d-flex justify-content-center">
+                    <span class="text-light">© 2020 Pooch Care. All Rights Reserved. Design by</span>
+                    <span class="text-danger">W3Layouts</span>
+                </div>
+            </div>
+        </footer>
+    </main>
     <!-- bootstrap -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <!-- owl carousel -->
+    <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("#owl-demo1").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    736: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 2,
+                        nav: false,
+                        loop: false
+                    }
+                }
+            })
+        })
+
+    </script>
 </body>
+
 </html>

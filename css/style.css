@@ -1,0 +1,161 @@
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 10%);
+}
+
+.header__wrap {
+    width: 90%;
+    margin: auto;
+}
+
+.header__wrap .navbar {
+    background-color: #fff !important;
+}
+
+.header__content .header__logo {
+    margin: 0;
+    padding: 0;
+    font-size: 34px;
+    font-weight: 700;
+    color: #189A46;
+}
+
+.disab {
+    top: 20px;
+    right: 60px;
+    display: none;
+    font-size: 20px;
+    color: #696969;
+    position: absolute;
+}
+
+.header__btn {
+    width: 33px;
+    height: 33px;
+    position: relative;
+    background-color: #189a46;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 1px;
+}
+
+.navbar-light .navbar-toggler {
+    color: #000;
+}
+
+.header__btn a i{
+    right: 5px; 
+    color: #fff;
+    position: relative;
+    width: 17px;
+    /* height: 21px; */
+}
+
+.header__content .header__logo:hover {
+    color: #189A46;
+}
+
+.header__content .header__list{
+    right: 20px;
+    flex-grow: 0;
+    position: relative;
+}
+
+.header__list ul {
+    gap: 5px;
+}
+
+
+.header__list a {
+    font-size: 17px;
+    font-weight: 400;
+    position: relative;
+    transition: all 0.5s ease;
+    color: #000c04 !important;
+}
+
+.green__bar {
+    width: 0;
+    left: 8px;
+    right: 8px;
+    height: 1px;
+    bottom: 7px;
+    position: absolute;
+    background-color: #189A46;
+    transition: all 0.3s linear;
+}
+
+.navbar-nav .nav-item:hover .green__bar {
+    width: 76%;
+}
+
+.navbar-nav .defautl a{
+    color: #189A46 !important;
+}
+
+.nav-item a:hover {
+    color: #189A46 !important;
+}
+
+.hide {
+    right: 0;
+    bottom: 21px;
+    font-size: 20px;
+    color: #696969;
+    position: absolute;
+}
+
+.dropdown .drop__menu {
+    top: 44px;
+    transform: translateX(-44px);
+}
+
+.dropdown-menu::before {  
+    left: 50%;
+    top: -7px;
+    z-index: 50;
+    content: '';
+    width: 12px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    border: 1px solid #d9d9d9;
+    border-right: none;
+    border-bottom: none;
+    background-color: #fff;
+    transform: translateX(-50%) rotateZ(45deg);
+}
+
+@media (max-width: 991px) {
+    .disab {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .header__content {
+        text-align: center;
+    }
+
+    .header__content .header__list {
+        right: 0;
+    }
+
+    .green__bar {
+        display: none;
+    }
+
+    .dropdown .drop__menu {
+        width: 80%;
+        transform: translateX(13%);
+        text-align: center;
+    }
+}

@@ -28,7 +28,7 @@
                     <a class="navbar-brand header__logo" href="#">Pooch Care
                     </a>
 
-                    <a id="lightChanges" class="disab" href="#">
+                    <a id="lightChanges" class="disab">
                         <i id="logoMoons" class="far fa-moon"></i>
                     </a>
 
@@ -91,7 +91,7 @@
                         </ul>
                     </div>
 
-                    <a id="lightChange" class="hide" href="#">
+                    <a id="lightChange" class="hide">
                         <i id="logoMoon" class="far fa-moon"></i>
                     </a>
                 </div>
@@ -99,7 +99,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="contentWrap">
         <section class="carousels">
 
             <div class="carousel slide" data-bs-ride="carousel" id="slider-1" data-bs-pause="false">
@@ -360,15 +360,15 @@
             var logoMoon = document.getElementById('logoMoon');
             logoMoon.classList.toggle('fa-moon');
             logoMoon.classList.toggle('fa-sun');
-            logoMoon.classList.toggle('dark');
             document.getElementById('header').classList.toggle('dark');
+            document.getElementById('contentWrap').classList.toggle('dark');
         }
         lightChanges.onclick = function () {
             var logoMoons = document.getElementById('logoMoons');
             logoMoons.classList.toggle('fa-moon');
             logoMoons.classList.toggle('fa-sun');
-            logoMoons.classList.toggle('dark');
             document.getElementById('header').classList.toggle('dark');
+            document.getElementById('contentWrap').classList.toggle('dark');
         }
     </script>
 

@@ -357,6 +357,9 @@
             document.getElementById('btnLogo').classList.toggle('fa-times');
         }
         lightChange.onclick = function () {
+            var logoMoons = document.getElementById('logoMoons');
+            logoMoons.classList.toggle('fa-moon');
+            logoMoons.classList.toggle('fa-sun');
             var logoMoon = document.getElementById('logoMoon');
             logoMoon.classList.toggle('fa-moon');
             logoMoon.classList.toggle('fa-sun');
@@ -364,6 +367,9 @@
             document.getElementById('contentWrap').classList.toggle('dark');
         }
         lightChanges.onclick = function () {
+            var logoMoon = document.getElementById('logoMoon');
+            logoMoon.classList.toggle('fa-moon');
+            logoMoon.classList.toggle('fa-sun');
             var logoMoons = document.getElementById('logoMoons');
             logoMoons.classList.toggle('fa-moon');
             logoMoons.classList.toggle('fa-sun');

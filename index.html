@@ -7,12 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pooch Care</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+ 
     <!-- owl carousel -->
     <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.css">
     <!-- reset css -->
@@ -23,8 +27,7 @@
 
 <body>
 
-
-    <main >
+    <main id="contentWrap" >
         <!-- Our Plans -->
         <section class="ourPlan">
             <div class="ourPlan__container text-center mx-auto ">
@@ -412,6 +415,8 @@
             })
         })
     </script>
+
+
     <!-- video -->
     <script src="./js/jquery.magnific-popup.min.js"></script>
     <script>
@@ -426,6 +431,28 @@
 		fixedContentPos: false
 	   });
     });
+    </script>
+
+    <!-- dark -->
+    <script>
+        btnButton.onclick = function () {
+            document.getElementById('btnLogo').classList.toggle('fa-bars');
+            document.getElementById('btnLogo').classList.toggle('fa-times');
+        }
+        lightChange.onclick = function () {
+            var logoMoon = document.getElementById('logoMoon');
+            logoMoon.classList.toggle('fa-moon');
+            logoMoon.classList.toggle('fa-sun');
+            document.getElementById('header').classList.toggle('dark');
+            document.getElementById('contentWrap').classList.toggle('dark');
+        }
+        lightChanges.onclick = function () {
+            var logoMoons = document.getElementById('logoMoons');
+            logoMoons.classList.toggle('fa-moon');
+            logoMoons.classList.toggle('fa-sun');
+            document.getElementById('header').classList.toggle('dark');
+            document.getElementById('contentWrap').classList.toggle('dark');
+        }
     </script>
 </body>
 

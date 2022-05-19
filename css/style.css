@@ -428,7 +428,6 @@ ul,
 /* footer */
 footer {
     background-color: var(--black1);
-    margin-bottom: 2000px;
 }
 
 .footer__top {
@@ -486,6 +485,29 @@ footer {
 .footer_bottom_container a {
     color: var(--tomato);
     text-decoration: none;
+}
+
+
+
+/* dark theme */
+
+.dark .ourPlan,
+.dark .testimontal{
+    background-color: #222222;
+}
+.dark .nutrition__title h3,
+.dark .ourPlan__title h2,
+.dark .testimontal__heading h3,
+.dark .people,
+.dark .owl-dot,
+.dark .updated__infor h2{
+    color: #fff;
+}
+.dark .nutrition ,
+.dark .ourPlan__item ,
+.dark .testimonial-content,
+.dark .updated{
+    background-color: #151515;
 }
 
 /* // X-Small devices (portrait phones, less than 576px)

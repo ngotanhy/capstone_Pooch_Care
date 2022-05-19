@@ -1,3 +1,31 @@
+:root {
+    --white: white;
+    --black: #010d05;
+    --green: green;
+    --seagreen: #189a46;
+    --gray: #8697ab;
+    --ghostWhite: #f9f7fe;
+    --brown: #a72a1f;
+    --tomato: #f54832;
+    --darkGray: #4d585b;
+    --black1: #111111;
+    --gray2: #696969;
+    --red: red;
+    --orangered: #f53626;
+    --whiteSmoke: #f6f6f6;
+}
+
+* {
+    font-family: 'Jost', sans-serif;
+}
+
+ul,
+.row,
+.row>* {
+    padding: 0;
+    margin: 0;
+}
+
 .text1-general {
     font-size: 18px;
     font-weight: 600;
@@ -402,34 +430,6 @@
 
 .counterup__item {
     text-align: center;
-}
-
-:root {
-    --white: white;
-    --black: #010d05;
-    --green: green;
-    --seagreen: #189a46;
-    --gray: #8697ab;
-    --ghostWhite: #f9f7fe;
-    --brown: #a72a1f;
-    --tomato: #f54832;
-    --darkGray: #4d585b;
-    --black1: #111111;
-    --gray2: #696969;
-    --red: red;
-    --orangered: #f53626;
-    --whiteSmoke: #f6f6f6;
-}
-
-* {
-    font-family: 'Jost', sans-serif;
-}
-
-ul,
-.row,
-.row>* {
-    padding: 0;
-    margin: 0;
 }
 
 /* ourPlan */

@@ -300,20 +300,10 @@ ul,
     opacity: 0.5;
     margin: 0 8px;
 }
-.carousel .carousel-indicators button:hover{
-    opacity: 1;
-    background-color: #189A46;
-    width: 30px;
-    height: 10px;
-    border-radius: 10px;
-}
 
 .carousel .carousel-indicators .active {
     opacity: 1;
     background-color: #189A46;
-    width: 30px;
-    height: 10px;
-    border-radius: 10px ;
 }
 
 .about {

@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pooch Care</title>
-
+    <!-- reset css -->
+    <link rel="icon" href="./img/pooch-care.jfif" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,15 +23,338 @@
 
     <!-- owl carousel -->
     <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.css">
-    <!-- reset css -->
-    <link rel="stylesheet" href="./css/reset.css">
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <header id="header">
+        <div class="header__wrap">
+            <nav id="headerWrap" class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid header__content">
+                    <a class="navbar-brand header__logo" href="#">Pooch Care
+                    </a>
 
-    <main id="contentWrap" >
+                    <a id="lightChanges" class="disab">
+                        <i id="logoMoons" class="far fa-moon"></i>
+                    </a>
+
+                    <button id="btnButton" class="navbar-toggler header__btn" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <a data-bs-target="#navbarNavDropdown"><i id="btnLogo" class="fas fa-bars"></i></a>
+                    </button>
+
+                    <div class="collapse navbar-collapse header__list" id="navbarNavDropdown">
+                        <ul  class="navbar-nav">
+                            <li class="nav-item defautl">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    Home
+                                    <div class="green__bar"></div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a id="navbarNav" class="nav-link" href="#">
+                                    About
+                                    <div class="green__bar"></div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Services
+                                    <div class="green__bar"></div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Gallery
+                                    <div class="green__bar"></div>
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog
+                                    <div class="green__bar"></div>
+                                </a>
+
+                                <ul class="dropdown-menu drop__menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog single</a></li>
+                                    <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Contact
+                                    <div class="green__bar"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a id="lightChange" class="hide">
+                        <i id="logoMoon" class="far fa-moon"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contentWrap">
+        <section class="carousels">
+
+            <div class="carousel slide" data-bs-ride="carousel" id="slider-1" data-bs-pause="false">
+                <div class="carousel-indicators">
+                    <button data-bs-target="#slider-1" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#slider-1" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#slider-1" data-bs-slide-to="2"></button>
+                    <button data-bs-target="#slider-1" data-bs-slide-to="3"></button>
+                </div>
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active" data-bs-interval="2500">
+                        <div class="overlay"></div>
+                        <div class="carousel__img1 carousel__img"></div>
+                        <div class="carousel-caption carousel__content">
+                            <div class="carousel__content--left">
+                                <h5>Quality Things For Loving Pets</h5>
+                                <p>Keeps Your Pets Smiling</p>
+                                <div class="carousel__btn-list">
+                                    <button class="btn__default">Read More</button>
+                                    <button class="btn__hover">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <div class="overlay"></div>
+                        <div class="carousel__img2 carousel__img"></div>
+                        <div class="carousel-caption carousel__content">
+                            <div class="carousel__content--right">
+                                <h5>Delivering Happiness For Pets</h5>
+                                <p>For The Love Of Pets</p>
+                                <div class="carousel__btn-list">
+                                    <button class="btn__default">Read More</button>
+                                    <button class="btn__hover">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <div class="overlay"></div>
+                        <div class="carousel__img3 carousel__img"></div>
+                        <div class="carousel-caption carousel__content">
+                            <div class="carousel__content--left">
+                                <h5>Quality Things For Loving Pets</h5>
+                                <p>Keeps Your Pets Smiling</p>
+                                <div class="carousel__btn-list">
+                                    <button class="btn__default">Read More</button>
+                                    <button class="btn__hover">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <div class="overlay"></div>
+                        <div class="carousel__img4 carousel__img"></div>
+                        <div class="carousel-caption carousel__content">
+                            <div class="carousel__content--right">
+                                <h5>Delivering Happiness For Pets</h5>
+                                <p>For The Love Of Pets</p>
+                                <div class="carousel__btn-list">
+                                    <button class="btn__default">Read More</button>
+                                    <button class="btn__hover">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about__content">
+                    <div class="about__text">
+                        <h4 class="text1-general">ABOUT US</h4>
+                        <h3 class="text2-general">We Love Your Pets Like They Are Our Own</h3>
+                        <p class="my-4 text3-general">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Consequuntur hic odio voluptatem tenetur consequatur.
+                            Vestibulum ante ipsum primis in faucibus orci luctus et
+                            ultrices posuere cubilia Curae; Nulla mollis dapibus nunc,
+                            ut rhoncus turpis sodales quis.
+                        </p>
+
+                        <a class="style__genaral" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <div class="row services__content">
+                    <div class="col-lg-4 col-sm-6 col- services__item">
+                        <div class="services__item-content">
+                            <i class="far fa-snowflake"></i>
+                            <a class="services__item-title" href="#">Dog Walking</a>
+                            <p class="text3-general">
+                                Vivamus a ligula quam. Ut blandit eu leo non.
+                                Duis sed doloramet laoreet. Lorem ipsum dolor
+                                sit amet Ut blandit eu leo.
+                            </p>
+                            <a class="style__genaral" href="#">Read More</a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col- services__item">
+                        <div class="services__item-content">
+                            <i class="fas fa-utensils"></i>
+                            <a class="services__item-title" href="#">Healthy Meals</a>
+                            <p class="text3-general">
+                                Vivamus a ligula quam. Ut blandit eu leo non.
+                                Duis sed doloramet laoreet. Lorem ipsum dolor
+                                sit amet Ut blandit eu leo.
+                            </p>
+                            <a class="style__genaral" href="#">Read More</a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col- services__item">
+                        <div class="services__item-content">
+                            <i class="fa fa-sign-language"></i>
+                            <a class="services__item-title" href="#">Pet Sitting</a>
+                            <p class="text3-general">
+                                Vivamus a ligula quam. Ut blandit eu leo non.
+                                Duis sed doloramet laoreet. Lorem ipsum dolor
+                                sit amet Ut blandit eu leo.
+                            </p>
+                            <a class="style__genaral" href="#">Read More</a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col- services__item">
+                        <div class="services__item-content">
+                            <i class="fa fa-sitemap"></i>
+                            <a class="services__item-title" href="#">Dog Activities</a>
+                            <p class="text3-general">
+                                Vivamus a ligula quam. Ut blandit eu leo non.
+                                Duis sed doloramet laoreet. Lorem ipsum dolor
+                                sit amet Ut blandit eu leo.
+                            </p>
+                            <a class="style__genaral" href="#">Read More</a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col- services__item">
+                        <div class="services__item-content">
+                            <i class="fa fa-shower"></i>
+                            <a class="services__item-title" href="#">Pet Daycare</a>
+                            <p class="text3-general">
+                                Vivamus a ligula quam. Ut blandit eu leo non.
+                                Duis sed doloramet laoreet. Lorem ipsum dolor
+                                sit amet Ut blandit eu leo.
+                            </p>
+                            <a class="style__genaral" href="#">Read More</a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col- services__item">
+                        <div class="services__item-content">
+                            <i class="fa fa-user-md"></i>
+                            <a class="services__item-title" href="#">Pet Grooming</a>
+                            <p class="text3-general">
+                                Vivamus a ligula quam. Ut blandit eu leo non.
+                                Duis sed doloramet laoreet. Lorem ipsum dolor
+                                sit amet Ut blandit eu leo.
+                            </p>
+                            <a class="style__genaral" href="#">Read More</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="choose">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 choose__left">
+                        <div class="choose__img">
+                            <img class="img-fluid" src="./img/ab.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 choose__right">
+                        <div class="choose__text">
+                            <h4 class="text1-general">WHY CHOOSE US</h4>
+                            <h3 class="text2-general">What We Offer For You</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicingelit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore 
+                                magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                                Lorem ipsum dolor sit amet, consectetur adipisicingelit,
+                            </p>
+                            <ul class="choose__text-list">
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Certified Groomer
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    10 Years of Experience
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Pet Lover
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Customer Supports
+                                </li>
+                                <li>
+                                    <i class="fa fa-check"></i>
+                                    Veterinary Help
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="counterup">
+            <div class="container">
+                <div class="row counterup__content">
+                    <div class="col-lg-3 col-sm-6 counterup__item">
+                        <p><span class="counter">730</span></p>
+                        <p class="counterup__text">Happy Clients</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 counterup__item">
+                        <p><span class="counter">80</span></p>
+                        <p class="counterup__text">Happy Clients</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 counterup__item">
+                        <p><span class="counter">812</span></p>
+                        <p class="counterup__text">Happy Clients</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 counterup__item">
+                        <p><span class="counter">90</span></p>
+                        <p class="counterup__text">Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Our Plans -->
         <section class="ourPlan">
             <div class="ourPlan__container text-center mx-auto ">
@@ -393,7 +718,14 @@
     <!-- bootstrap -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- jquery -->
-    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
     <!-- owl carousel -->
     <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
     <script>
@@ -447,6 +779,7 @@
             document.getElementById('btnLogo').classList.toggle('fa-times');
         }
         lightChange.onclick = function () {
+         
             var logoMoon = document.getElementById('logoMoon');
             logoMoon.classList.toggle('fa-moon');
             logoMoon.classList.toggle('fa-sun');
@@ -454,6 +787,7 @@
             document.getElementById('contentWrap').classList.toggle('dark');
         }
         lightChanges.onclick = function () {
+           
             var logoMoons = document.getElementById('logoMoons');
             logoMoons.classList.toggle('fa-moon');
             logoMoons.classList.toggle('fa-sun');
@@ -465,6 +799,15 @@
     <!-- backtotop -->
      <script src="./js/util.js"></script>
      <script src="./js/main.js"></script>
+    <!-- couterup -->
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script>
+        $('.counter').counterUp({
+            delay: 10,
+            time: 3000
+        });
+    </script>
+
 </body>
 
 </html>

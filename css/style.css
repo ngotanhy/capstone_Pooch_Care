@@ -997,6 +997,23 @@ footer {
 
 
 /* responsive */
+@media (max-width: 1199.98px) { 
+    .footer__container,
+    .ourPlan__container,
+    .updated__container,
+    .testimontal__container,
+    .nutrition__container {
+        width: 90% !important;
+        padding: 0 15px;
+    }
+    .ourPlan__container{
+        padding: 0 40px;
+    }
+    
+    .updated__input{
+       text-align: center;
+    }
+ }
 
 @media (max-width: 991px) {
     .disab {
@@ -1033,6 +1050,9 @@ footer {
     .counterup__content .counterup__item:nth-child(4) {
         margin-top: 48px;
     }
+    .ourPlan__item .btn {
+        opacity: 0 ;
+     }
 }
 
 @media (max-width: 767px) {
@@ -1051,7 +1071,13 @@ footer {
     .counterup__content .counterup__text {
         font-size: 17px;
     }
-
+    .ourPlan__cards {
+        justify-content: center;
+    }
+    .testimontal__container,
+    .ourPlan__container{
+        width: 80%;
+    }
 }
 
 @media (max-width: 590px) {
@@ -1062,7 +1088,6 @@ footer {
     .counterup__content .counterup__item {
         width: 50%;
     }
-
 
 
     .ourPlan__container{
@@ -1135,9 +1160,6 @@ footer {
         font-weight: 400;
     }
 
-
-
-
     .ourPlan__container,
     .ourPlan__item,
     .footer__container,
@@ -1157,24 +1179,6 @@ footer {
         margin: 0 !important;
     }
 
-}
-
-
-@media (max-width: 1199.98px) { 
-    .footer__container,
-    .ourPlan__container,
-    .updated__container,
-    .testimontal__container,
-    .nutrition__container {
-        width: 90% !important;
-        padding: 0 15px;
-    }
-    .ourPlan__container{
-        padding: 0 40px;
-    }
-    .updated__input{
-       text-align: center;
-    }
 }
 
 

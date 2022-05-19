@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
- 
+    
+    <!-- magnific-popup -->
+    <link rel="stylesheet" href="./node_modules/magnific-popup/dist/magnific-popup.css">
+
     <!-- owl carousel -->
     <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.css">
     <!-- reset css -->
@@ -116,7 +118,7 @@
                         <div class="history-info mt-5 position-relative">
                             <div class="">
                                 <img src="./images/banner2.jpg" />
-                                <a class="popup-vimeo position-absolute play-view" href="https://vimeo.com/45830194">
+                                <a class="popup-vimeo position-absolute play-view" href="https://player.vimeo.com/video/101587706">
                                     <span class="video-play-icon">
                                         <i class="fa fa-play"></i>
                                     </span>     
@@ -140,11 +142,11 @@
                                 <div class="testimonial-content">
                                     <div class="testimonial">
                                         <blockquote>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Velit beatae laudantium
                                                 voluptate rem ullam dolore nisi voluptatibus esse quasi,
                                                 doloribus tempora.
-                                                Dolores molestias adipisci dolor sit amet!.</p>
+                                                Dolores molestias adipisci dolor sit amet!.</q>
                                         </blockquote>
                                         <div class="testi-des ">
                                             <div class="test-img">
@@ -162,11 +164,11 @@
                                 <div class="testimonial-content">
                                     <div class="testimonial">
                                         <blockquote>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Velit beatae laudantium
                                                 voluptate rem ullam dolore nisi voluptatibus esse quasi,
                                                 doloribus tempora.
-                                                Dolores molestias adipisci dolor sit amet!.</p>
+                                                Dolores molestias adipisci dolor sit amet!.</q>
                                         </blockquote>
                                         <div class="testi-des">
                                             <div class="test-img">
@@ -184,11 +186,11 @@
                                 <div class="testimonial-content">
                                     <div class="testimonial">
                                         <blockquote>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Velit beatae laudantium
                                                 voluptate rem ullam dolore nisi voluptatibus esse quasi,
                                                 doloribus tempora.
-                                                Dolores molestias adipisci dolor sit amet!.</p>
+                                                Dolores molestias adipisci dolor sit amet!.</q>
                                         </blockquote>
                                         <div class="testi-des">
                                             <div class="test-img">
@@ -206,11 +208,11 @@
                                 <div class="testimonial-content">
                                     <div class="testimonial">
                                         <blockquote>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Velit beatae laudantium
                                                 voluptate rem ullam dolore nisi voluptatibus esse quasi,
                                                 doloribus tempora.
-                                                Dolores molestias adipisci dolor sit amet!.</p>
+                                                Dolores molestias adipisci dolor sit amet!.</q>
                                         </blockquote>
                                         <div class="testi-des">
                                             <div class="test-img">
@@ -228,11 +230,11 @@
                                 <div class="testimonial-content">
                                     <div class="testimonial">
                                         <blockquote>
-                                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <q> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Velit beatae laudantium
                                                 voluptate rem ullam dolore nisi voluptatibus esse quasi,
                                                 doloribus tempora.
-                                                Dolores molestias adipisci dolor sit amet!.</p>
+                                                Dolores molestias adipisci dolor sit amet!.</q>
                                         </blockquote>
                                         <div class="testi-des">
                                             <div class="test-img">
@@ -250,11 +252,11 @@
                                 <div class="testimonial-content">
                                     <div class="testimonial">
                                         <blockquote>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Velit beatae laudantium
                                                 voluptate rem ullam dolore nisi voluptatibus esse quasi,
                                                 doloribus tempora.
-                                                Dolores molestias adipisci dolor sit amet!.</p>
+                                                Dolores molestias adipisci dolor sit amet!.</q>
                                         </blockquote>
                                         <div class="testi-des">
                                             <div class="test-img">
@@ -381,7 +383,12 @@
                 </div>
               </div>
         </footer>
-
+        
+         <!-- back to top -->
+            <a class="buttonToTop cd-top text-replace js-cd-top">
+                    ⤴
+            </a>
+        
     </main>
     <!-- bootstrap -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -418,7 +425,7 @@
 
 
     <!-- video -->
-    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./node_modules/magnific-popup/dist/jquery.magnific-popup.js"></script>
     <script>
      $(document).ready(function() {
 	$('.popup-vimeo').magnificPopup({
@@ -454,6 +461,10 @@
             document.getElementById('contentWrap').classList.toggle('dark');
         }
     </script>
+
+    <!-- backtotop -->
+     <script src="./js/util.js"></script>
+     <script src="./js/main.js"></script>
 </body>
 
 </html>
